@@ -1,0 +1,68 @@
+//My customization rofi
+
+configuration {
+	font:			"Roboto mono 11";
+	show-icons:		false;
+	hide-scrollbar:		true;
+}
+
+window {
+	transparency:		"real";
+	background-color:	#21222c;
+	text-color:		#FFFFFF;
+	border: 		3px;
+	border-color:		#282A36;
+	border-radius:		0;
+}
+
+prompt {
+	enabled:		true;
+	text-color:		#FFFFFF;
+	font: 			"Roboto mono 11";
+}
+
+entry {
+	background-color: 	#21222c;
+	text-color: 		#FFFFFF;
+	placeholder-color: 	#FFFFFF;
+	placeholder: 		"Что будем искать?";
+	padding:		0.10% 0% 0% 0%;
+	blink: 			true;
+	margin: 		0% 0% 0% 1%;
+}
+
+inputbar {
+	children:		[ prompt, entry];
+	background-color:	#21222c;
+	expand:			false;
+	border: 		0% 0% 0% 0%;
+	margin: 		0% 0% 0% 0%;
+	padding:		1.5%;
+}
+
+listview {
+	background-color:	#21222c;
+	padding: 		1% 2% 1% 2%;
+	columns: 		2;
+	lines:			5;
+	spacing: 		0.5%;
+	border:			0%;
+}
+
+element {
+	backgroung-color: 	#21222c;
+	text-color:		#21222c;
+	orientation: 		vertical;
+	border: 		0%;	
+}
+
+element-text {
+	background-color:	#21222c;
+	padding: 		1% 6% 1% 7%;
+	border-color: 		#282A36;
+	text-color:		#FFFFFF;
+}
+
+element-text selected {
+	background-color:	#282A36;
+}
